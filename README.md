@@ -1,5 +1,8 @@
 # PPEFM (Prompt Penetration Electric Field Model)
 
+![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey)
+![MATLAB](https://img.shields.io/badge/MATLAB-R2018b%2B-blue)
+
 This repository provides MATLAB implementations of the Prompt Penetration Electric Field Model (PPEFM) and an example script that downloads OMNI 5‑minute solar wind data and computes equatorial electric fields in the time domain.
 
 **Real‑time implementation (web tool):**
@@ -20,6 +23,15 @@ addpath(pwd);
 % Run the example script
 ppefm_omni_example
 ```
+
+## Requirements
+- MATLAB R2018b or newer (uses `datetime`, `webread`, `fillmissing`)
+- No additional toolboxes required
+
+## Outputs & Units
+The model outputs the equatorial eastward electric field (EEF) and intermediate IEF components in **mV/m**. An example transfer‑function response is shown below.
+
+![Transfer Function response to the synthetic inputs of IEF Ey. (left) The input signal and (right) the zonal electric field output (adapted from Manoj et al. [2008]).](images/tf_response.png)
 
 ## Climatology Model (Scherliess & Fejer 1999)
 The climatological (quiet‑time) component is based on the Scherliess & Fejer (1999) model of equatorial vertical plasma drift. The implementation:
