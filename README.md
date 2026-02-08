@@ -31,7 +31,8 @@ ppefm_omni_example
 ## Outputs & Units
 The model outputs the equatorial eastward electric field (EEF) and intermediate IEF components in **mV/m**. An example transfer‑function response is shown below.
 
-![Transfer Function response to the synthetic inputs of IEF Ey. (left) The input signal and (right) the zonal electric field output (adapted from Manoj et al. [2008]).](images/tf_response.png)
+![Transfer‑function response example](images/tf_response.png)
+*Transfer‑function response to synthetic IEF Ey input. Left: input signal. Right: zonal electric‑field output. Adapted from Manoj et al. (2008).*
 
 ## Climatology Model (Scherliess & Fejer 1999)
 The climatological (quiet‑time) component is based on the Scherliess & Fejer (1999) model of equatorial vertical plasma drift. The implementation:
