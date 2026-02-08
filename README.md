@@ -31,14 +31,14 @@ ppefm_omni_example
 ## Outputs & Units
 The model outputs the equatorial eastward electric field (EEF) and intermediate IEF components in **mV/m**. An example transfer‑function response is shown below.
 
-![Transfer‑function response example](images/tf_response.png)
+![Transfer‑function response example](images/tf_response_v2.png)
 *Transfer‑function response to synthetic IEF Ey input. Left: input signal. Right: zonal electric‑field output. Adapted from Manoj et al. (2008).*
 
 ## Climatology Model (Scherliess & Fejer 1999)
 The climatological (quiet‑time) component is based on the Scherliess & Fejer (1999) model of equatorial vertical plasma drift. The implementation:
 - Evaluates the Scherliess & Fejer vertical drift model as a function of local time, longitude, day‑of‑year, and F10.7.
-- Converts vertical drift (m/s) to electric field (mV/m) by multiplying by the geomagnetic field magnitude at 600 km and dividing by `1e6`.
-- Uses a fixed WMM field‑strength profile along the dip equator for the conversion.
+- The vertical drift is converted to the equatorial ionospheric eastward electric field by multiplying it by the magnetic field strength along the dip equator.
+- The climatological component converts vertical plasma drift (from the Scherliess & Fejer model) to electric field using magnetic field strengths from WMM at 600 km altitude along the dip equator: **E (mV/m) = V (m/s) × B (nT) / 10⁶**.
 
 The original FORTRAN is included as `vdrift-model_jgr0499.f` for reference.
 
