@@ -15,14 +15,12 @@ preferred-citation:
       given-names: C.
     - family-names: Maus
       given-names: S.
-    - family-names: Alken
-      given-names: P.
-  year: 2013
-  title: "Long-period prompt-penetration electric fields derived from CHAMP satellite magnetic measurements"
-  journal: "Journal of Geophysical Research: Space Physics"
-  volume: 118
-  pages: "5919–5930"
-  doi: "10.1002/jgra.50511"
+  year: 2012
+  title: "A real-time forecast service for the ionospheric equatorial zonal electric field"
+  journal: "Space Weather"
+  volume: 10
+  pages: "S09002"
+  doi: "10.1029/2012SW000825"
 references:
   - type: article
     authors:
