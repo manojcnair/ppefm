@@ -7,7 +7,7 @@ This repository provides MATLAB implementations of the Prompt Penetration Electr
 
 **Real‑time implementation (web tool):**
 ```
-https://geomag.colorado.edu/index.php/online-calculators/real-time-model-ionospheric-electric-fields
+https://geomag.colorado.edu/online-calculators/real-time-model-ionospheric-electric-fields
 ```
 
 **Contents**
