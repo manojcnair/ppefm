@@ -39,12 +39,7 @@ The climatological (quiet‑time) component is based on the Scherliess & Fejer (
 
 For the climatological model:
 - It evaluates vertical drift as a function of local time, longitude, day‑of‑year, and F10.7.
-- The climatological component converts vertical plasma drift (from the Scherliess & Fejer model) to electric field using magnetic field strengths from the **World Magnetic Model (WMM)** at 600 km altitude along the dip equator: **E (mV/m) = V (m/s) × B (nT) / 10⁶**.
-
-World Magnetic Model (WMM) information (NCEI):
-```
-https://www.ncei.noaa.gov/products/world-magnetic-model
-```
+- Quiet‑time equatorial ionospheric eastward electric field (climatology of EEF) may be obtained by multiplying the **vertical drift** output from the FORTRAN code by the local magnetic‑field strength (e.g., from the **International Geomagnetic Reference Field, IGRF** or the **World Magnetic Model, WMM**): **E (mV/m) = V (m/s) × B (nT) / 10⁶**.
 
 The original FORTRAN is included as `vdrift-model_jgr0499.f` for reference.
 
