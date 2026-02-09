@@ -15,15 +15,6 @@ https://geomag.colorado.edu/online-calculators/real-time-model-ionospheric-elect
 - `ppefm_omni_example.m` — minimal, clean example script that downloads OMNI 5‑minute GSM By/Bz + Vsw and runs PPEFM.
 - `vdrift-model_jgr0499.f` — original Scherliess & Fejer (1999) vertical drift model (FORTRAN).
 
-## Quick Start (MATLAB)
-```matlab
-% Make sure ppefm_time_domain.m is on your path
-addpath(pwd);
-
-% Run the example script
-ppefm_omni_example
-```
-
 ## Requirements
 - MATLAB R2018b or newer (uses `datetime`, `webread`, `fillmissing`)
 - No additional toolboxes required
