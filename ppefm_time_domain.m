@@ -71,7 +71,7 @@ function [EEF, IEF_Ey, IEF_Ez, lt_response, time_utc] = ppefm_time_domain(Vsw, I
 % ==========================================================================
 % VERSION:
 %   v3.1 - February 2026 - Added LT response and propagation delay matching
-%          EEFMTools.GetEEF + ppefm.java logic.
+%          EEFMTools.GetEEF.
 %
 % ==========================================================================    
 
@@ -125,7 +125,7 @@ function [EEF, IEF_Ey, IEF_Ez, lt_response, time_utc] = ppefm_time_domain(Vsw, I
     Ty_a = [1.0000, -1.256299, 0.412882];
     Ty_b = [0.000824, 0.000170, -0.000296, -0.001166];
 
-    %% Step 3: Apply IIR filter (Java CalculateTFResponse equivalent)
+    %% Step 3: Apply IIR filter 
     EEF_from_Ey = iir_filter_time_domain(Tx_b, Tx_a, IEF_Ey);
     EEF_from_Ez = iir_filter_time_domain(Ty_b, Ty_a, IEF_Ez);
 
